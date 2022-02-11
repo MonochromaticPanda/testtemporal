@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<html lang= "en">
+<head>
+  <meta charset = "UTF-8">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  
+  <link rel = "stylesheet" href = "./style.css"/>
+  <title> map </title>
+  
+</head>
+<body>
+
+  <div id ="map"> </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.0.2/fxparser.min.js" integrity="sha512-1EerR73cHcZTphojmECgByiyPumrQ5Vyt5gsdRm6d6ann+KZY774mzrdQg7iiBUzZViaQdpByjvn5LH5O4JKlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.0.2/fxparser.js" integrity="sha512-53HyVymh+n8HTeZ6ND4oQ+yWHxupmItxAybc5lesv8CsPvyjRijNy8fOCw3Lg/IVv7OTDkIjGRwa78Jv2EQT/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  
+  <script type = "module">
+    
+    var parser = new fxparser.XMLParser();
+    // parser.parse(xmlContent); (hay que poner la info del kml)
+
+    console.log(parser);
+
+    let mapOptions = {
+      center:[-16.57650446085035, -64.90850859197836],
+      zoom:3,
+    }
+
+    var markers = [[-33.19396196527845, -70.74875179093172], [-15.946881805865203, -63.55987386323262]]
+    //debe ser reemplazado por la data extraida del kml
+
+
+    let map = new L.map('map', mapOptions);
+    let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+    markers.forEach(function (item, index) {
+      let marker = new L.Marker(item);
+      marker.addTo(map);
+    });
+
+    map.addLayer(layer);
+
+  </script>
+  
+  <!-- <script type="module" src="./scripts.js"> </script> -->
+  
+</body>
+
+</html>
+  
