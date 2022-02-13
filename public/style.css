@@ -1,0 +1,116 @@
+.bg-discord{
+    background-color: #e32731;
+}
+.bg-dark{
+    background-color: #d2141e;
+}
+.navbar{
+    padding: 20px;
+}
+@import url('https://fonts.googleapis.com/css?family=Readex Pro:wght@900&display=swap');
+.navbar-brand{
+    font-family: 'Readex Pro', 'sans-serif';
+    font-size: 30px;
+}
+.container-1{
+    margin-bottom: 50px;
+}
+.bg-grey{
+    background-color: #f0323c;
+}
+.card{
+    border-width: 0px;
+    border-radius: 25px;
+    color: #ffffff;
+    margin-bottom: 20px
+}
+.brand-line{
+    font-family: 'Readex Pro', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    color: #ffffff;
+}
+.title-line{
+    font-family: 'Readex Pro', sans-serif;
+    padding-top: 25px;
+    color: #ffffff;
+    margin-left: 40px;
+}
+.card-img-top{
+    padding: 0px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.btn-discord{
+    color: #000000;
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+}
+.btn-discord:hover{
+    color: #000000;
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+}
+.big-text{
+    font-size: 36px;
+}
+.card-text{
+    font-size: 16px;
+}
+input{
+    margin: 25px;
+    border-color: #c83c0a;
+    border-width: 5px;
+    color: #c83c0a;
+}
+.form-control{
+    border-color: #c83c0a;
+    border-width: 2px;
+    border-radius: 25px;
+    color: #c83c0a;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.form-control:active{
+    border-color: #343c44;
+    border-width: 3px;
+    border-radius: 25px;
+    color: #343c44;
+}
+.list-group{
+    list-style: none;
+    background-color: #343c44;
+}
+.list-group-item{
+    list-style: none;
+    background-color: #343c44;
+    border-width: 0px;
+}
+.date{
+    font-size: 12px;
+}
+
+a:link {
+  color:  #ffffff;
+}
+
+/* visited link */
+a:visited {
+  color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7d7d7d;
+}
+
+/* selected link */
+a:active {
+  color: #ffffff;
+}
+
+#map{
+    width: 100%;
+    height: 100vh;
+}
